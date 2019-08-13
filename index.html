@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../f/css/vendor.css" type="text/css" rel="stylesheet"><!--endbuild-->
+    <link href="../f/css/styles.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+      body {
+          height: auto;
+          background: #1f1f1f;
+          color: #fff;
+          font-family: "Museo Sans Cyrl 300", "HelveticaNeueCyr", Helvetica, Arial, sans-serif;
+          font-size: 14px;
+      }
+      
+      h2 {
+          font-size: 36px;
+          font-weight: 300;
+          text-align: center;
+          color: #d86a43;
+          padding-top: 50px;
+      }
+      
+      h3 {
+          color: #d86a43;
+          font-style: italic;
+      }
+      
+      section {
+          padding: 20px 40px;
+          margin: 40px 0;
+      }
+      
+      a {
+          color: inherit;
+      }
+      
+      ul {
+          counter-reset: list;
+          font-size: 0;
+          min-width: 720px;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+      }
+      
+      ul li {
+          list-style-type: none;
+          display: inline-block;
+          width: 33.33%;
+          font-size: 18px;
+          vertical-align: top;
+          padding-left: 30px;
+          padding-right: 15px;
+          position: relative;
+          padding-bottom: 10px;
+          transition: width 0.3s;
+          line-height: 1.6;
+          max-width: 325px;
+          text-align: left;
+      }
+      
+      ul li:before {
+          counter-increment: list;
+          content: counter(list) ". ";
+          position: absolute;
+          left: 3px;
+          top: 0px;
+          color: inherit;
+      }
+      
+      @media (max-width: 1023px) {
+          ul {
+              min-width: 720px;
+          }
+      
+          ul li {
+              width: 50%;
+          }
+      }
+      
+      @media (max-width: 719px) {
+          ul {
+              min-width: 320px;
+          }
+      
+          ul li {
+              width: 100%;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      &nbsp;Список страниц
+      
+    </h2>
+    <section>
+      <ul>
+        <li><a href="home.html" target="_blank">Главная - основная</a></li>
+        <li><a href="article.html" target="_blank">Текстовая</a></li>
+        <li><a href="album.html" target="_blank">Альбомы</a></li>
+        <li><a href="team.html" target="_blank">Команда</a></li>
+        <li><a href="home-inner.html" target="_blank">Дисциплина</a></li>
+      </ul>
+    </section>
+  </body>
+</html>
